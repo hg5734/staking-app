@@ -177,6 +177,7 @@ const App = () => {
             <th>#</th>
             <th>Amount</th>
             <th>Deposit Block</th>
+            {/* <th>APY (2% every 10 blocks)</th> */}
             <th>Action</th>
           </tr>
         </thead>
@@ -186,6 +187,7 @@ const App = () => {
               <td>{index + 1}</td>
               <td>{formatBalance(stake.amount, decimal)} STT</td>
               <td>{stake.depositBlock}</td>
+              {/* <td></td> */}
               <td><Button variant="primary" onClick={(e) => handleUnstake(index + 1)} loading={loading}> Withdraw </Button></td>
             </tr>
           </tbody>
