@@ -20,7 +20,8 @@ npx hardhat accounts --network testnet // to check the list of accounts
 npx hardhat node // setup local blockchain 
 yarn deploy --network testnet // deploy on local blockchain 
 
-npx hardhat verify --network test <address>
+npx hardhat verify --network testnet 0x3Ac6593e44c02B6f26134a5c6f6c97f97923fD62 "Staking Token" "STT" "8"
+npx hardhat verify --network testnet 0xBD0ed2ba860546d43b23FaE11D77D2e7E47eEEAf "0x3Ac6593e44c02B6f26134a5c6f6c97f97923fD62" 20000000000000000 10
 
 ```
 
@@ -34,3 +35,6 @@ npx hardhat node // setup local blockchain
 yarn test --network localhost // this will run all test cases on local node
 ```
 
+### Contract address
+1. STT Token https://mumbai.polygonscan.com/address/0x3Ac6593e44c02B6f26134a5c6f6c97f97923fD62#code
+2. Staking Contract https://mumbai.polygonscan.com/address/0xBD0ed2ba860546d43b23FaE11D77D2e7E47eEEAf#code
